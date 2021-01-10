@@ -16,8 +16,10 @@ def generate_hparams():
     parser.add_argument('--enc_vocab_size', default=20000, type=int)
     parser.add_argument('--dec_vocab_size', default=20000, type=int)
     parser.add_argument('--epoch', default=40, type=int)
+    # 使用了绝对路径，需要修改
     parser.add_argument('--ckpt_dir', default='C:\\Users\\MI\\Desktop\\人工智能实践\\chattingbot\\model', type=str,
                         help='model save path')
+    # 使用了绝对路径，需要修改
     parser.add_argument('--data_path', default='C:\\Users\\MI\\Desktop\\人工智能实践\\chattingbot\\code\\xhj.csv',
                         type=str, help='data save path')
 
